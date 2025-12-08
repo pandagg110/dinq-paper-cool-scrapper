@@ -1,0 +1,18 @@
+{
+  "offsets": {},
+  "done": [
+    "data_ready\\.ingest_checkpoint.json",
+    "data_ready\\colt-award.json",
+    "data_ready\\cvpr-highlight.json",
+    "data_ready\\cvpr-oral.json",
+    "data_ready\\iccv-highlight.json",
+    "data_ready\\iccv-oral.json",
+    "data_ready\\iclr-oral.json",
+    "data_ready\\iclr-spotlight.json",
+    "data_ready\\icml-oral.json",
+    "data_ready\\icml-spotlight.json",
+    "data_ready\\neurlips-oral.json",
+    "data_ready\\neurlips-spotlight.json",
+    "data_ready\\osdi.json"
+  ]
+}

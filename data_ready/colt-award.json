@@ -1,0 +1,108 @@
+{
+  "source_html": "html\\colt-award.html",
+  "paper_count": 2,
+  "conference": "colt",
+  "year": 2025,
+  "status": "award",
+  "papers": [
+    {
+      "paper_id": "cai25b@v291@PMLR",
+      "index": 1,
+      "title": "What Makes Treatment Effects Identifiable? Characterizations and Estimators Beyond Unconfoundedness",
+      "authors": [
+        "Yang Cai",
+        "Alkis Kalavasis",
+        "Katerina Mamali",
+        "Anay Mehrotra",
+        "Manolis Zampetakis"
+      ],
+      "subjects": [
+        "COLT.2025 - Award"
+      ],
+      "keywords": [
+        "unconfoundedness",
+        "treatment",
+        "ate",
+        "emph",
+        "overlap",
+        "condition",
+        "estimators",
+        "assumptions",
+        "identification",
+        "violate"
+      ],
+      "summary": "Most of the widely used estimators of the \\emph{average treatment effect} (ATE) in causal inference rely on the assumptions of \\emph{unconfoundedness} and \\emph{overlap}. Unconfoundedness requires that the observed covariates account for all correlations between the outcome and treatment. Overlap requires the existence of randomness in treatment decisions for all individuals. Nevertheless, many types of studies frequently violate unconfoundedness or overlap, for instance, observational studies with deterministic treatment decisions - popularly known as Regression Discontinuity designs - violate overlap. In this paper, we initiate the study of general conditions that enable the \\emph{identification} of the average treatment effect, extending beyond unconfoundedness and overlap. In particular, following the paradigm of {statistical} learning theory, we provide an interpretable condition that is sufficient and nearly necessary for the identification of ATE. Moreover, this condition characterizes the identification of the \\emph{average treatment effect on the treated} (ATT) and can be used to characterize other treatment effects as well. To illustrate the utility of our condition, we present several well-studied scenarios where our condition is satisfied and, hence, we prove that ATE can be identified in regimes that prior works could not capture. For example, under mild assumptions on the data distributions, this holds for the models proposed by Tan (2006) and Rosenbaum (2002), and the Regression Discontinuity design model introduced by Thistlethwaite and Campbell (1960). For each of these scenarios, we also show that, under natural additional assumptions, ATE can be estimated from finite samples. We believe these findings open new avenues for bridging learning-theoretic insights and causal inference methodologies, particularly in observational studies with complex treatment mechanisms.",
+      "session": null,
+      "time": null,
+      "links": {
+        "link": [
+          "https://proceedings.mlr.press/v291/cai25b.html"
+        ],
+        "venue": [
+          "/venue/cai25b@v291@PMLR",
+          "/venue/COLT.2025?group=Award"
+        ],
+        "pdf": [
+          "https://raw.githubusercontent.com/mlresearch/v291/main/assets/cai25b/cai25b.pdf"
+        ],
+        "detail": [
+          "https://proceedings.mlr.press/v291/cai25b.html"
+        ]
+      },
+      "scores": {
+        "pdf": 2,
+        "kimi": 5
+      },
+      "raw_excerpt": "What Makes Treatment Effects Identifiable? Characterizations and Estimators Beyond Unconfoundedness [PDF 2 ] [Copy] [Kimi 5 ] [REL] Authors : Yang Cai , Alkis Kalavasis , Katerina Mamali , Anay Mehrotra , Manolis Zampetakis Most of the widely used estimators of the \\emph{average treatment effect} (ATE) in causal inference rely on the assumptions of \\emph{unconfoundedness} and \\emph{overlap}. Unconfoundedness requires that the observed covariates account for all correlations between the outcome and treatment. Overlap requires the existence of randomness in treatment decisions for all individuals. Nevertheless, many types of studies frequently violate unconfoundedness or overlap, for instance, observational studies with deterministic treatment decisions - popularly known as Regression Discontinuity designs - violate overlap. In this paper, we initiate the study of general conditions that enable the \\emph{identification} of the average treatment effect, extending beyond unconfoundedness and overlap. In particular, following the paradigm of {statistical} learning theory, we provide an interpretable condition that is sufficient and nearly necessary for the identification of ATE. Moreover, this condition characterizes the identification of the \\emph{average treatment effect on the treated} (ATT) and can be used to characterize other treatment effects as well. To illustrate the utility of our condition, we present several well-studied scenarios where our condition is satisfied and, hence, we prove that ATE can be identified in regimes that prior works could not capture. For example, under mild assumptions on the data distributions, this holds for the models proposed by Tan (2006) and Rosenbaum (2002), and the Regression Discontinuity design model introduced by Thistlethwaite and Campbell (1960). For each of these scenarios, we also show that, under natural additional assumptions, ATE can be estimated from finite samples. We believe these findings open new avenues for bridging learning-theoretic insights and causal inference methodologies, particularly in observational studies with complex treatment mechanisms. Subject : COLT.2025 - Award"
+    },
+    {
+      "paper_id": "chen25a@v291@PMLR",
+      "index": 2,
+      "title": "Solving Convex-Concave Problems with O ( ϵ − 4 / 7 ) O ( ϵ − 4 / 7 ) Second-Order Oracle Complexity",
+      "authors": [
+        "Lesi Chen",
+        "Chengchang Liu",
+        "Luo Luo",
+        "Jingzhao Zhang"
+      ],
+      "subjects": [
+        "COLT.2025 - Award"
+      ],
+      "keywords": [
+        "concave",
+        "convex",
+        "epsilon",
+        "minimax",
+        "mathcal",
+        "oracle",
+        "order",
+        "second",
+        "algorithms",
+        "jmlr"
+      ],
+      "summary": "Previous algorithms can solve convex-concave minimax problems min x ∈ X max y ∈ Y f ( x , y ) min x ∈ X max y ∈ Y f ( x , y ) with \\gO ( ϵ − 2 / 3 ) \\gO ( ϵ − 2 / 3 ) second-order oracle calls using Newton-type methods. This result has been speculated to be optimal because the upper bound is achieved by a natural generalization of the optimal first-order method. In this work, we show an improved upper bound of \\gO ~ ( ϵ − 4 / 7 ) \\gO ~ ( ϵ − 4 / 7 ) by generalizing the optimal second-order method for convex optimization to solve the convex-concave minimax problem. We further apply a similar technique to lazy Hessian algorithms and show that our proposed algorithm can also be seen as a second-order “Catalyst” framework (Lin et al., JMLR 2018) that could accelerate any globally convergent algorithms for solving minimax problems.",
+      "session": null,
+      "time": null,
+      "links": {
+        "link": [
+          "https://proceedings.mlr.press/v291/chen25a.html"
+        ],
+        "venue": [
+          "/venue/chen25a@v291@PMLR",
+          "/venue/COLT.2025?group=Award"
+        ],
+        "pdf": [
+          "https://raw.githubusercontent.com/mlresearch/v291/main/assets/chen25a/chen25a.pdf"
+        ],
+        "detail": [
+          "https://proceedings.mlr.press/v291/chen25a.html"
+        ]
+      },
+      "scores": {
+        "pdf": 6,
+        "kimi": 4
+      },
+      "raw_excerpt": "Solving Convex-Concave Problems with O ( ϵ − 4 / 7 ) O ( ϵ − 4 / 7 ) Second-Order Oracle Complexity [PDF 6 ] [Copy] [Kimi 4 ] [REL] Authors : Lesi Chen , Chengchang Liu , Luo Luo , Jingzhao Zhang Previous algorithms can solve convex-concave minimax problems min x ∈ X max y ∈ Y f ( x , y ) min x ∈ X max y ∈ Y f ( x , y ) with \\gO ( ϵ − 2 / 3 ) \\gO ( ϵ − 2 / 3 ) second-order oracle calls using Newton-type methods. This result has been speculated to be optimal because the upper bound is achieved by a natural generalization of the optimal first-order method. In this work, we show an improved upper bound of \\gO ~ ( ϵ − 4 / 7 ) \\gO ~ ( ϵ − 4 / 7 ) by generalizing the optimal second-order method for convex optimization to solve the convex-concave minimax problem. We further apply a similar technique to lazy Hessian algorithms and show that our proposed algorithm can also be seen as a second-order “Catalyst” framework (Lin et al., JMLR 2018) that could accelerate any globally convergent algorithms for solving minimax problems. Subject : COLT.2025 - Award"
+    }
+  ]
+}

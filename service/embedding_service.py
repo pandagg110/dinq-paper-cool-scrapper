@@ -1,8 +1,14 @@
 from openai import OpenAI
 import os
+import requests
+import json
+proxies = {
+    "http": "http://127.0.0.1:33210",
+    "https": "http://127.0.0.1:33210",
+}
 
 # text-embedding-3-small => 1536 dims (fits IVFFLAT index limit)
-EMBEDDING_MODEL = "openai/text-embedding-3-small"
+EMBEDDING_MODEL = "text-embedding-3-small"
 
 
 def generate_embedding(text: str):
@@ -24,6 +30,39 @@ def generate_embedding(text: str):
 
     return embedding.data[0].embedding
 
+def generate_embedding_http(text: str, max_retries: int = 3, backoff: float = 1.0):
+    import time
+
+    api_key = os.getenv("OPENROUTER_API_KEY")
+    retry = 0
+    last_exception = None
+
+    while retry < max_retries:
+        try:
+            response = requests.post(
+                "https://openrouter.ai/api/v1/embeddings",
+                headers={
+                    "Authorization": f"Bearer {api_key}",
+                    "Content-Type": "application/json",
+                },
+                proxies=proxies,
+                json={
+                    "model": "text-embedding-3-small",
+                    "input": text,
+                },
+                timeout=300,
+            )
+            response.raise_for_status()
+            data = response.json()
+            return data["data"][0]["embedding"]
+        except Exception as e:
+            last_exception = e
+            retry += 1
+            if retry < max_retries:
+                time.sleep(backoff * retry)
+    raise last_exception
+
+
 
 def generate_embedding_text(paper_obj: object):
     title = paper_obj.get("title")
@@ -35,7 +74,8 @@ def generate_embedding_text(paper_obj: object):
 
 def generate_embedding_by_paper_obj(paper_obj: object):
     text = generate_embedding_text(paper_obj)
-    return generate_embedding(text)
+    # return generate_embedding(text)
+    return generate_embedding_http(text)
 
 
 if __name__ == "__main__":
